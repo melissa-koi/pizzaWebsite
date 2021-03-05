@@ -1,0 +1,75 @@
+.special{
+    background-color: black;
+    min-height: 100vh;
+}
+.buttonC{
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+    color:#333;
+    font-size: 1.6rem;
+    font-weight:bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor:pointer;
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+}
+
+.card-container{
+    width: 95%;
+    margin:7rem auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.card{
+    height:30rem;
+    width: 20rem;
+    background: white;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+img{
+    height:40%;
+    width:100%;
+    object-fit: cover;
+}
+p{
+    /* font-size: rem; */
+    
+}
+button{
+    height:3.5rem;
+    width:14rem;
+    background: #333;
+    color: #fff;
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+    /* font-size: 1.6rem; */
+    font-weight:bold;
+    text-transform: capitalize;
+    /* letter-spacing: .2rem; */
+    cursor:pointer;
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+}
+button:hover{
+    color:#333;
+    background-color: rgb(145, 145, 18);
+    
+}
+/* .card:hover{
+    transform: scale(.9);
+    transition-duration: 250ms;
+} */
+
+.price{
+    font-weight: bolder;
+}
