@@ -4,9 +4,11 @@
     box-sizing:border-box;
 }
 
+/* special card section starts */
+
 .special{
     background-color: black;
-    height: 100vh;
+    height:fit-content
 }
 .cartRef{
     text-decoration: none;
@@ -47,15 +49,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .cartRef button:hover{
     opacity: .8
 }
-/* .card:hover{
-    transform: scale(.9);
+.card:hover{
+    transform: scale(1.1);
     transition-duration: 250ms;
-} */
+}
 .price{
     font-weight: bolder;
     font-size: 160%;
@@ -64,3 +65,29 @@
 .card-par{
     font-size: 15px;
 }
+
+/* special card section ends */
+
+#containerBuild h2{
+    text-align: center;
+}
+.step1 ul{
+    text-align: center;
+    list-style-type: none;
+    align-items: center;
+}
+[type="checkbox"] {
+    font-weight: bold;
+   
+}
+/* .custom-checkbox{
+    --size: .75em;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);;
+    cursor:pointer;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    transform:scale(1)
+} */
