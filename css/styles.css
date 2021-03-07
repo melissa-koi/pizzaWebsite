@@ -3,9 +3,17 @@
     margin:0;
     box-sizing:border-box;
 }
-.intro img{
-    height: 100vh;
+.intro{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.301)),url("../images/intro4.jpg.crdownload");
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 35px;
 }
+
 
 /* special card section starts */
 
