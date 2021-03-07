@@ -7,7 +7,7 @@
 
 /* introduction starts*/
 .intro{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.486)),url("../images/intro4.jpg.crdownload");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.664)),url("../images/intro4.jpg.crdownload");
     height:90vh;
     background-size: cover;
     background-position: center;
@@ -26,8 +26,12 @@
     font-style: italic;
 }
 .intro ul{
-    padding-top: 30px;
-    padding-bottom: 180px;
+    padding-top: 20px;
+    padding-bottom: 190px;
+    text-transform:none;
+}
+.nav-itemL{
+    margin-right:20px
 }
 .aboutUs{
     margin-bottom: 70px;
@@ -65,6 +69,9 @@
     text-align: center;
     color:limegreen;
     font-weight: bolder;
+}
+.mid{
+    text-align: center;
 }
 .cartRef{
     text-decoration: none;

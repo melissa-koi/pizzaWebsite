@@ -15,22 +15,25 @@
 
 <!-- introduction starts -->
 <section class="intro">
-    
+    <ul class="nav justify-content-end navbar-light" id="navBar">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#introL">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutUsL">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#specialL">Chef's List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#buildL">Customise</a>
+        </li>
+        <li class="nav-itemL">
+            <a href="#"><i class="fas fa-shopping-cart mt-3"></i></a>
+        </li>
+        
+    </ul>
     <div class="container-fluid" id="introL">
-        <ul class="nav justify-content-end" id="navBar">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#introL">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutUsL">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#specialL">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#buildL">Link</a>
-            </li>
-        </ul>
         <p>Welcome to<h1>pizza city</h1>where you can build your own pizza or if you're feeling a tad lazy,<br> order from our chef's list!</p>
     </div>
     
@@ -53,55 +56,55 @@
 
 <!-- special card section starts -->
 <section class="special" id="specialL">
-    <h2 id="title2">Chef's favorites</h2>
+    <h2 id="title2">Chef's favorites<h4 class="mid">Medium size</h4></h2>
     <div class="card-container">
         <div class="card">
             <img class="card-img" src="images/allmeat.jpg" alt="">
             <h2 class="mt-3">All Meats</h2>
             <p class="card-par">Our delicious tomato sauce base topped with a fantastic combination of roast chicken pieces matched with our sweet, juicy pineapple chunks. The kids will love this one and so will you!</p>
-            <div class="price">50</div>
+            <div class="price">$15</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/hawaian.jpeg" alt="">
             <h2 class="mt-3">Hawaian</h2>
             <p class="card-par">Pineapple might not be the first thing that comes to mind when you think pizza. But add in some ham and it creates an unexpectedly solid sweet and salty combination for this type of pizza.</p>
-            <div class="price">50</div>
+            <div class="price">$17</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/magherita.jpeg" alt="">
             <h2 class="mt-3">Margherita</h2>
             <p class="card-par">A typical Neapolitan pizza, made with a tomato base,mozzarella cheese and generously sprinkled with oregano.</p>
-            <div class="price">50</div>
+            <div class="price">$16</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/pepperoni.jpeg" alt="">
             <h2 class="mt-3">Pepperoni</h2>
             <p class="card-par">A classic pizza with spicy pepperoni sausage and our special tomato sauce drizzled over the top.</p>
-            <div class="price">50</div>
+            <div class="price">$15</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/3cheese.jpeg" alt="">
             <h2 class="mt-3">3 Cheeses</h2>
             <p class="card-par">No sauce - just lashings of mozzarella, fetta and bocconcini cheeses.</p>
-            <div class="price">50</div>
+            <div class="price">$12</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/mexicana.jpeg" alt="">
             <h2 class="mt-3">Mexicana</h2>
             <p class="card-par">A spicy treat for those who like it HOT. Contains spicy pepperoni, onion slices, fresh strips of capsicum topped with mozzarella cheese. Want it extra spicy? Add both chilli flakes and jalapenos.</p>
-            <div class="price">50</div>
+            <div class="price">$14</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
             <img class="card-img" src="images/vegeterian.jpeg" alt="">
             <h2 class="mt-3">Vegetarian</h2>
             <p class="card-par">No meat, no worries! Market fresh slices of onion, mushrooms, capsicum and sweet juicy pineapple chunks.</p>
-            <div class="price">50</div>
+            <div class="price">$12</div>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         
@@ -117,9 +120,9 @@
         <div class="step1">
             <h2>Step 1: Choose a Size</h2>
             <ul>
-                <li class="clickable">Small</li>
-                <li class="clickable">Medium</li>
-                <li class="clickable">Large</li>
+                <li class="clickable">Small ($04)</li>
+                <li class="clickable">Medium ($07)</li>
+                <li class="clickable">Large ($14)</li>
             </ul>
         </div>
         <div class="step2">
@@ -139,12 +142,8 @@
             <h2>Step 3: Choose a sauce</h2>
             <input type="radio" id="Tomato Sauce" name="base" value="Tomato Sauce">
             <label for="Tomato Sauce">Tomato Sauce</label><br>
-            <input type="radio" id="Extra Tomato Sauce" name="base" value="Extra Tomato Sauce" >
-            <label for="Extra Tomato Sauce">Extra Tomato Sauce</label><br>
             <input type="radio" id="BBQ sauce" name="base" value="BBQ sauce">
             <label for="BBQ sauce">BBQ sauce</label><br>
-            <input type="radio" id="Extra BBQ sauce" name="base" value="Extra BBQ sauce">
-            <label for="Extra BBQ sauce">Extra BBQ sauce</label><br>
             <input type="radio" id="Red sauce" name="base" value="Red sauce">
             <label for="Red sauce">Red sauce</label><br>
             <input type="radio" id="Remove sauce" name="base" value="Remove sauce">
@@ -153,7 +152,8 @@
         <div class="step4">
             <h2>Step 4: Choose Your Toppings</h2>
             <div class="row">
-                <div class="col-md-3"> 
+                <div class="col-md-3">
+                    <div class="prices">Meats:$4 each</div> 
                     <h4>MEATS</h4>
                     <div class="toppings">
                         <input type="checkbox" id="Anchovies" name="topping">
@@ -186,6 +186,7 @@
                 </div>
 
                 <div class="col-md-3">
+                    <div class="prices">Cheeses:$3 each</div>
                     <h4>CHEESES</h4>
                     <div class="toppings">
                         <input type="checkbox" id="Blue Cheese" name="topping">
@@ -208,8 +209,8 @@
                         <label for="Parmesan">Parmesan</label>
                     </div>
                 </div>
-
                 <div class="col-md-3">
+                    <div class="prices">Vg&Fr:$2 each</div>
                     <h4>VEGGIES & FRUITS</h4>
                     <div class="toppings">
                         <input type="checkbox" id="Basil" name="topping">
@@ -242,6 +243,7 @@
                 </div>
 
                 <div class="col-md-3">
+                    <div class="prices">Other:$2 each</div>
                     <h4>OTHER</h4>
                     <div class="toppings">
                         <input type="checkbox" id="Balsamic Glaze" name="topping">
