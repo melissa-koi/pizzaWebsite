@@ -3,6 +3,9 @@
     margin:0;
     box-sizing:border-box;
 }
+.intro img{
+    height: 100vh;
+}
 
 /* special card section starts */
 
