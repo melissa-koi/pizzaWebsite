@@ -14,11 +14,11 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 250px;
-    font-size: 30px;
+    font-size: 28px;
     color: yellowgreen;
     font-weight: bold;
 }
-h1{
+.intro h1{
     margin: 0;
     margin-bottom: 20px;
     color: white;
@@ -123,6 +123,9 @@ h1{
 /* Build your pizza start */
 #containerBuild{
     background-color: yellowgreen;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border:3px solid black;
 }
 #containerBuild h2{
     text-align: center;
@@ -130,6 +133,16 @@ h1{
 .step1 ul{
     text-align: center;
     list-style-type: none;
+    align-items: center;
+}
+#title3{
+    color:white;
+    text-align: center;
+    padding-top:45px;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+.step4{
     align-items: center;
 }
 /* Build your pizza ends */
