@@ -26,14 +26,16 @@ h1{
     word-spacing: 4px;
     font-style: italic;
 }
-
+.aboutUs{
+    margin-bottom: 70px;
+}
 /* introduction ends*/
 
 /* About us starts */
 #container2 h2{
     text-transform: uppercase;
     text-align: center;
-    color: yellowgreen;
+    color:limegreen;
     font-weight: bolder;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -46,7 +48,7 @@ h1{
     text-transform:uppercase;
 }
 #par2{
-    font-size:18px;
+    font-size:20px;
 }
 /* About us ends */
 
@@ -54,6 +56,12 @@ h1{
 .special{
     background-color: black;
     height:fit-content;
+}
+#title2{
+    text-transform: uppercase;
+    text-align: center;
+    color:limegreen;
+    font-weight: bolder;
 }
 .cartRef{
     text-decoration: none;
