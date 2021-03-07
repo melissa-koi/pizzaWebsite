@@ -3,6 +3,9 @@
     margin:0;
     box-sizing:border-box;
 }
+
+
+/* introduction starts*/
 .intro{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.486)),url("../images/intro4.jpg.crdownload");
     height:90vh;
@@ -10,7 +13,7 @@
     background-position: center;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 250px;
     font-size: 30px;
     color: yellowgreen;
     font-weight: bold;
@@ -23,15 +26,21 @@ h1{
     word-spacing: 4px;
     font-style: italic;
 }
-.into p{
 
+/* introduction ends*/
+
+/* About us starts */
+#container2 h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: yellowgreen;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-top: 20px;
 }
-#containerBuild{
-    background-color:yellowgreen
-}
+/* About us ends */
 
 /* special card section starts */
-
 .special{
     background-color: black;
     height:fit-content
@@ -91,9 +100,12 @@ h1{
 .card-par{
     font-size: 15px;
 }
-
 /* special card section ends */
 
+/* Build your pizza start */
+#containerBuild{
+    background-color: yellowgreen;
+}
 #containerBuild h2{
     text-align: center;
 }
@@ -102,18 +114,4 @@ h1{
     list-style-type: none;
     align-items: center;
 }
-[type="checkbox"] {
-    font-weight: bold;
-   
-}
-/* .custom-checkbox{
-    --size: .75em;
-    display: inline-block;
-    width: var(--size);
-    height: var(--size);
-    margin-right: var(--size);;
-    cursor:pointer;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-    transform:scale(1)
-} */
+/* Build your pizza ends */
