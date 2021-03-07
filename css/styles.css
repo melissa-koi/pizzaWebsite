@@ -13,7 +13,6 @@
     background-position: center;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 250px;
     font-size: 28px;
     color: yellowgreen;
     font-weight: bold;
@@ -25,6 +24,10 @@
     font-size: 240%;
     word-spacing: 4px;
     font-style: italic;
+}
+.intro ul{
+    padding-top: 30px;
+    padding-bottom: 180px;
 }
 .aboutUs{
     margin-bottom: 70px;
