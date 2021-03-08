@@ -63,7 +63,6 @@
             <h2 class="mt-3">All Meats</h2>
             <p class="card-par">Our delicious tomato sauce base topped with a fantastic combination of roast chicken pieces matched with our sweet, juicy pineapple chunks. The kids will love this one and so will you!</p>
             <div class="price">$15</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -71,7 +70,6 @@
             <h2 class="mt-3">Hawaian</h2>
             <p class="card-par">Pineapple might not be the first thing that comes to mind when you think pizza. But add in some ham and it creates an unexpectedly solid sweet and salty combination for this type of pizza.</p>
             <div class="price">$17</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -79,7 +77,6 @@
             <h2 class="mt-3">Margherita</h2>
             <p class="card-par">A typical Neapolitan pizza, made with a tomato base,mozzarella cheese and generously sprinkled with oregano.</p>
             <div class="price">$16</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -87,7 +84,6 @@
             <h2 class="mt-3">Pepperoni</h2>
             <p class="card-par">A classic pizza with spicy pepperoni sausage and our special tomato sauce drizzled over the top.</p>
             <div class="price">$15</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -95,7 +91,6 @@
             <h2 class="mt-3">3 Cheeses</h2>
             <p class="card-par">No sauce - just lashings of mozzarella, fetta and bocconcini cheeses.</p>
             <div class="price">$12</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -103,7 +98,6 @@
             <h2 class="mt-3">Mexicana</h2>
             <p class="card-par">A spicy treat for those who like it HOT. Contains spicy pepperoni, onion slices, fresh strips of capsicum topped with mozzarella cheese. Want it extra spicy? Add both chilli flakes and jalapenos.</p>
             <div class="price">$14</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         <div class="card">
@@ -111,7 +105,6 @@
             <h2 class="mt-3">Vegetarian</h2>
             <p class="card-par">No meat, no worries! Market fresh slices of onion, mushrooms, capsicum and sweet juicy pineapple chunks.</p>
             <div class="price">$12</div>
-            <span></span>
             <a class="cartRef" href="#"><button>Add To Cart</button></a>
         </div>
         
@@ -127,11 +120,11 @@
         <h2 id="title3">Explore your creativity by building your own pizza.Remember to have fun!</h2>
         <div class="step1">
             <h2>Step 1: Choose a Size</h2>
-            <input type="radio" id="Small" name="base" value="Small" class="clickable"required>
+            <input type="radio" id="Small" name="size" value="Small" class="clickable"required>
             <label for="Small">Small ($04)</label><br>
-            <input type="radio" id="Medium" name="base" value="Medium" class="clickable"required>
+            <input type="radio" id="Medium" name="size" value="Medium" class="clickable"required>
             <label for="Medium">Medium ($07)</label><br>
-            <input type="radio" id="Large" name="base" value="Large" class="clickable"required>
+            <input type="radio" id="Large" name="size" value="Large" class="clickable"required>
             <label for="Large">Large ($14)</label><br>
         </div>
         <div class="step2">
@@ -149,14 +142,12 @@
         </div>
         <div class="step3">
             <h2>Step 3: Choose a sauce</h2>
-            <input type="radio" id="Tomato Sauce" name="base" value="Tomato Sauce">
+            <input type="radio" id="Tomato Sauce" name="sauce" value="Tomato Sauce">
             <label for="Tomato Sauce">Tomato Sauce</label><br>
-            <input type="radio" id="BBQ sauce" name="base" value="BBQ sauce">
+            <input type="radio" id="BBQ sauce" name="sauce" value="BBQ sauce">
             <label for="BBQ sauce">BBQ sauce</label><br>
-            <input type="radio" id="Red sauce" name="base" value="Red sauce">
+            <input type="radio" id="Red sauce" name="sauce" value="Red sauce">
             <label for="Red sauce">Red sauce</label><br>
-            <input type="radio" id="Remove sauce" name="base" value="Remove sauce">
-            <label for="Remove sauce">Remove sauce</label><br>
         </div>
         <div class="step4">
             <h2>Step 4: Choose Your Toppings</h2>
@@ -265,7 +256,8 @@
                 </div>
             </div>
         </div>
-
+        <a class="cartRef" href="#"><button type="submit" id="submit">Add Item(s)To Cart</button></a>
+        
     </div>
 </section>
 <!-- buid your own pizza form ends -->
