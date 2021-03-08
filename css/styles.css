@@ -8,7 +8,7 @@
 /* introduction starts*/
 .intro{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.664)),url("../images/intro4.jpg.crdownload");
-    height:90vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
 }
 .intro ul{
     padding-top: 20px;
-    padding-bottom: 190px;
+    padding-bottom: 180px;
     text-transform:none;
 }
 .nav-itemL{
@@ -161,6 +161,7 @@ h2#title3{
     color: darkgreen;
     margin-top:15px;
 }
+.step1,
 .step2,
 .step3{
     padding-left: 40px;
