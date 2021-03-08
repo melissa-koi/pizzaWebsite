@@ -227,37 +227,3 @@ $("button#submit").click(function(event){
     console.log(optionsPrice)
 //     console.log("You ordered a "+ checkedSize + " pizza with " + checkedBase+ " base and " + checkedSauce)
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function cartNumbers() {
-//      let productNumbers = localStorage.getItem('cartNumbers');
-//      productNumbers = parseInt(productNumbers);
-
-//      if(productNumbers) {
-//          localStorage.setItem('cartNumbers',productNumbers+1)
-//          document.querySelector('.cart span').textContent=productNumbers+1
-//      }else{
-//         localStorage.setItem('cartNumbers',1)
-//         document.querySelector('#navBar span').textContent=1
-//     }
-// }
