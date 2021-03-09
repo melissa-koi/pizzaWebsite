@@ -47,57 +47,14 @@ let products = [
 let carts = document.querySelectorAll(".cartRef")
 for(let i=0; i<carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        result=products[i].name;
+        result=products[i].name, products[i].price;
         result2=products[i].price;
         console.log(JSON.stringify(result))
         console.log(JSON.stringify(result2))
         $("div#log").append("<li>" + JSON.stringify(result) +  "</li>")
         
-        // (function (logger) {
-        //     console.old = console.log;
-        //     console.log = function () {
-        //         var output = "", arg, i;
-        
-        //         for (i = 0; i < arguments.length; i++) {
-        //             arg = arguments[i];
-        //             output += "<span class=\"log-" + (typeof arg) + "\">";
-                    
-        
-        //             if (
-        //                 typeof arg === "object" &&
-        //                 typeof JSON === "object" &&
-        //                 typeof JSON.stringify === "function"
-        //             ) {
-        //                 output += JSON.stringify(arg);   
-        //             } else {
-        //                 output += arg;   
-        //             }
-        
-        //             output += "</span>&nbsp;";
-        //         }
-        
-        //         logger.innerHTML += output + "<br>";
-        //         console.old.apply(undefined, arguments);
-                
-        //     };
-        // })(document.getElementById("logger"));
-        
-        
-   
     })
 }
-// function cartNumbers(product) {
-    //alert("My product is ",product.name)
-    // setItems(product)
-//}
-// function setItems(product) {
-    
-//     product.incart=1;
-// }
-// function displayCart(product){
-    
-//     console.log("product us",product)
-// }
 
 $("button#submit").click(function(event){
     event.preventDefault();
@@ -275,7 +232,7 @@ $("button#submit").click(function(event){
         $("div#log").append("<li>" + 'Toppings: '+ totToppings +  "</li>")
         console.log(optionsPrice)
         console.log(JSON.stringify(optionsPrice))
-        $("div#log").append("<li>" + 'Tot price from options: ' + optionsPrice +  "</li>")
+        $("div#log").append("<li>" + '<Strong>Total price from options:</Strong> ' + optionsPrice +  "</li>")
         (function (logger) {
             console.old = console.log;
             console.log = function () {
