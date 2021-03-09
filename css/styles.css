@@ -7,7 +7,7 @@
 
 /* introduction starts*/
 .intro{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.664)),url("../images/intro4.jpg.crdownload");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.664)),url("../images/Trumpwallpapers\ -\ Pizza\ Wallpapers.jpeg");
     height: 90vh;
     background-size: cover;
     background-position: center;
@@ -168,3 +168,31 @@ h2#title3{
 }
 
 /* Build your pizza ends */
+
+/* ----------------------CART PAGE-------------------- */
+
+.products-container{
+    max-width:650px;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-top: 50px;
+}
+.product-header{
+    width:100%;
+    max-width:650px;
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin:0 auto;
+}
+.products-title{
+    width:45%;
+}
+.priced{
+    width:15%;
+  
+}
+.products-container{
+    height:40vh;
+    width: 100vh
+}

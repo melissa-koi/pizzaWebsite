@@ -47,18 +47,57 @@ let products = [
 let carts = document.querySelectorAll(".cartRef")
 for(let i=0; i<carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
+        result=products[i].name;
+        result2=products[i].price;
+        console.log(JSON.stringify(result))
+        console.log(JSON.stringify(result2))
+        $("div#log").append("<li>" + JSON.stringify(result) +  "</li>")
         
+        // (function (logger) {
+        //     console.old = console.log;
+        //     console.log = function () {
+        //         var output = "", arg, i;
+        
+        //         for (i = 0; i < arguments.length; i++) {
+        //             arg = arguments[i];
+        //             output += "<span class=\"log-" + (typeof arg) + "\">";
+                    
+        
+        //             if (
+        //                 typeof arg === "object" &&
+        //                 typeof JSON === "object" &&
+        //                 typeof JSON.stringify === "function"
+        //             ) {
+        //                 output += JSON.stringify(arg);   
+        //             } else {
+        //                 output += arg;   
+        //             }
+        
+        //             output += "</span>&nbsp;";
+        //         }
+        
+        //         logger.innerHTML += output + "<br>";
+        //         console.old.apply(undefined, arguments);
+                
+        //     };
+        // })(document.getElementById("logger"));
+        
+        
+   
     })
 }
-function cartNumbers(product) {
-    setItems(product)
-}
-function setItems(product) {
-    console.log("My product is ",product)
-    product.incart=1;
-}
-
+// function cartNumbers(product) {
+    //alert("My product is ",product.name)
+    // setItems(product)
+//}
+// function setItems(product) {
+    
+//     product.incart=1;
+// }
+// function displayCart(product){
+    
+//     console.log("product us",product)
+// }
 
 $("button#submit").click(function(event){
     event.preventDefault();
@@ -219,11 +258,50 @@ $("button#submit").click(function(event){
             totToppings.push(checkedTopping)
             optionsPrice+=5
         } 
-
-    console.log(checkedSize)
-    console.log(checkedBase)
-    console.log(checkedSauce)
-    console.log(totToppings)
-    console.log(optionsPrice)
-//     console.log("You ordered a "+ checkedSize + " pizza with " + checkedBase+ " base and " + checkedSauce)
+        
+        
+        
+        console.log(checkedSize)
+        console.log(JSON.stringify(checkedSize))
+        $("div#log").append("<li>" + 'Size: '+ checkedSize +  "</li>")
+        console.log(checkedBase)
+        console.log(JSON.stringify(checkedBase))
+        $("div#log").append("<li>" + 'Base: '+ checkedBase +  "</li>")
+        console.log(checkedSauce)
+        console.log(JSON.stringify(checkedSauce))
+        $("div#log").append("<li>" + 'Sauce: '+ checkedSauce +  "</li>")
+        console.log(totToppings)
+        console.log(JSON.stringify(totToppings))
+        $("div#log").append("<li>" + 'Toppings: '+ totToppings +  "</li>")
+        console.log(optionsPrice)
+        console.log(JSON.stringify(optionsPrice))
+        $("div#log").append("<li>" + 'Tot price from options: ' + optionsPrice +  "</li>")
+        (function (logger) {
+            console.old = console.log;
+            console.log = function () {
+                var output = "", arg, i;
+        
+                for (i = 0; i < arguments.length; i++) {
+                    arg = arguments[i];
+                    output += "<span class=\"log-" + (typeof arg) + "\">";
+        
+                    if (
+                        typeof arg === "object" &&
+                        typeof JSON === "object" &&
+                        typeof JSON.stringify === "function"
+                    ) {
+                        output += JSON.stringify(arg);   
+                    } else {
+                        output += arg;   
+                    }
+        
+                    output += "</span>&nbsp;";
+                }
+        
+                logger.innerHTML += output + "<br>";
+                console.old.apply(undefined, arguments);
+            };
+        })(document.getElementById("logger"));
+        
 });
+
