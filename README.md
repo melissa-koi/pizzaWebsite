@@ -24,4 +24,4 @@ You will need:
 * Repository used to host the website
 ## [Link]() to live webpage
 
-## [License] (https://github.com/melissa-koi/pizzaWebsite/blob/main/LICENSE)
+## [License] <https://github.com/melissa-koi/pizzaWebsite/blob/main/LICENSE>
