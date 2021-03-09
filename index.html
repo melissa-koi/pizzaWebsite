@@ -8,8 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel = "stylesheet" type = "text/css">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script async src="js/scripts.js"></script>
+    
 </head>
 <body>
 
@@ -29,7 +28,7 @@
             <a class="nav-link" href="#buildL">Customise</a>
         </li>
         <li class="nav-itemL">
-            <a href="#"><i class="fas fa-shopping-cart mt-3"></i><span>0</span></a>
+            <a href="#cartL"><i class="fas fa-shopping-cart mt-3"></i></a>
         </li>
         
     </ul>
@@ -43,6 +42,7 @@
 <!-- About us starts -->
 <section class="aboutUs" id="aboutUsL">
     <div class="container" id="container2">
+        
         <h2>About Us</h2>
         <div class="row">
             <div class="col-md-2" id="par1"><p>Wholesome and awesome!</p></div>
@@ -117,10 +117,10 @@
 <!-- buid your own pizza form start -->
 <section class="buid" id="buildL">
     <div class="container" id="containerBuild">
-        <h2 id="title3">Explore your creativity by building your own pizza.Remember to have fun!</h2>
+        <h2 id="title3">Are you looking to DIY your pizza? Don't stress, we got you covered.</h2>
         <div class="step1">
             <h2>Step 1: Choose a Size</h2>
-            <input type="radio" id="Small" name="size" value="Small" class="clickable"required>
+            <input type="radio" id="Small" name="size" value="Small" class="clickable" required>
             <label for="Small">Small ($04)</label><br>
             <input type="radio" id="Medium" name="size" value="Medium" class="clickable"required>
             <label for="Medium">Medium ($07)</label><br>
@@ -129,25 +129,27 @@
         </div>
         <div class="step2">
             <h2>Step 2: Choose The Base</h2>
-            <input type="radio" id="Original Pan" name="base" value="Original Pan" required>
-            <label for="Original Pan">Original Pan</label><br>
+            <input type="radio" id="OriginalPan" name="base" value="Original Pan" required>
+            <label for="OriginalPan">Original Pan ($01)</label><br>
             <input type="radio" id="Traditional" name="base" value="Traditional" required>
-            <label for="Traditional">Traditional</label><br>
-            <input type="radio" id="Thin 'N' Crispy" name="base" value="Thin 'N' Crispy" required>
-            <label for="Thin 'N' Crispy">Thin 'N' Crispy</label><br>
-            <input type="radio" id="Stuffed Crust" name="base" value="Stuffed Crust" required>
-            <label for="Stuffed Crust">Stuffed Crust</label><br>
-            <input type="radio" id="Gluten Free" name="base" value="Gluten Free" required>
-            <label for="Gluten Free">Gluten Free</label><br>
+            <label for="Traditional">Traditional ($01)</label><br>
+            <input type="radio" id="ThinNCrispy" name="base" value="Thin 'N' Crispy" required>
+            <label for="Thin'N'Crispy">Thin 'N' Crispy ($02)</label><br>
+            <input type="radio" id="StuffedCrust" name="base" value="Stuffed Crust" required>
+            <label for="StuffedCrust">Stuffed Crust ($02)</label><br>
+            <input type="radio" id="GlutenFree" name="base" value="Gluten Free" required>
+            <label for="GlutenFree">Gluten Free ($01)</label><br>
         </div>
         <div class="step3">
             <h2>Step 3: Choose a sauce</h2>
-            <input type="radio" id="Tomato Sauce" name="sauce" value="Tomato Sauce">
-            <label for="Tomato Sauce">Tomato Sauce</label><br>
-            <input type="radio" id="BBQ sauce" name="sauce" value="BBQ sauce">
-            <label for="BBQ sauce">BBQ sauce</label><br>
-            <input type="radio" id="Red sauce" name="sauce" value="Red sauce">
-            <label for="Red sauce">Red sauce</label><br>
+            <input type="radio" id="TomatoSauce" name="sauce" value="Tomato Sauce">
+            <label for="TomatoSauce">Tomato Sauce</label><br>
+            <input type="radio" id="BBQsauce" name="sauce" value="BBQ sauce">
+            <label for="BBQsauce">BBQ sauce</label><br>
+            <input type="radio" id="Redsauce" name="sauce" value="Red sauce">
+            <label for="Redsauce">Red sauce</label><br>
+            <input type="radio" id="Removesauce" name="sauce" value="Remove sauce">
+            <label for="Removesauce">Remove sauce</label><br>
         </div>
         <div class="step4">
             <h2>Step 4: Choose Your Toppings</h2>
@@ -164,12 +166,12 @@
                         <label for="Pepperoni">Pepperoni</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Grilled Chicken" name="topping">
-                        <label for="Grilled Chicken">Grilled Chicken</label>
+                        <input type="checkbox" id="GrilledChicken" name="topping">
+                        <label for="GrilledChicken">Grilled Chicken</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Italian Sausage" name="topping">
-                        <label for="Italian Sausage">Italian Sausage</label>
+                        <input type="checkbox" id="ItalianSausage" name="topping">
+                        <label for="ItalianSausage">Italian Sausage</label>
                     </div>
                     <div class="toppings">
                         <input type="checkbox" id="Beef" name="topping">
@@ -189,8 +191,8 @@
                     <div class="prices">Cheeses:$3 each</div>
                     <h4>CHEESES</h4>
                     <div class="toppings">
-                        <input type="checkbox" id="Blue Cheese" name="topping">
-                        <label for="Blue Cheese">Blue Cheese</label>
+                        <input type="checkbox" id="BlueCheese" name="topping">
+                        <label for="BlueCheese">Blue Cheese</label>
                     </div>
                     <div class="toppings">
                         <input type="checkbox" id="Cheddar" name="topping">
@@ -217,50 +219,62 @@
                         <label for="Basil">Basil</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Jalepeno Peppers" name="topping">
-                        <label for="Jalepeno Peppers">Jalepeno Peppers</label>
+                        <input type="checkbox" id="JalepenoPeppers" name="topping">
+                        <label for="JalepenoPeppers">Jalepeno Peppers</label>
                     </div>
                     <div class="toppings">
                         <input type="checkbox" id="Oregano" name="topping">
                         <label for="Oregano">Oregano</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Red Onion" name="topping">
-                        <label for="Red Onion">Red Onion</label>
+                        <input type="checkbox" id="RedOnion" name="topping">
+                        <label for="RedOnion">Red Onion</label>
                     </div>
                     <div class="toppings">
                         <input type="checkbox" id="Mushrooms" name="topping">
                         <label for="Mushrooms">Mushrooms</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Diced Tomato" name="topping">
-                        <label for="Diced Tomato">Diced Tomato</label>
+                        <input type="checkbox" id="DicedTomato" name="topping">
+                        <label for="DicedTomato">Diced Tomato</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Red Bell Pepper" name="topping">
-                        <label for="Red Bell Pepper">Red Bell Pepper</label>
+                        <input type="checkbox" id="RedBellPepper" name="topping">
+                        <label for="RedBellPepper">Red Bell Pepper</label>
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <div class="prices">Other:$2 each</div>
+                    <div class="prices">Other:$5 each</div>
                     <h4>OTHER</h4>
                     <div class="toppings">
-                        <input type="checkbox" id="Balsamic Glaze" name="topping">
-                        <label for="Balsamic Glaze">Balsamic Glaze</label>
+                        <input type="checkbox" id="BalsamicGlaze" name="topping">
+                        <label for="BalsamicGlaze">Balsamic Glaze</label>
                     </div>
                     <div class="toppings">
-                        <input type="checkbox" id="Permesan-Herb Shake" name="topping">
-                        <label for="Permesan-Herb Shake">Permesan-Herb Shake</label>
+                        <input type="checkbox" id="PermesanHerbShake" name="topping">
+                        <label for="PermesanHerbShake">Permesan-Herb Shake</label>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="submit" id="submit">Add Item(s)To Cart</button>
+        <button type="submit" id="submit" class="btn-outline-secondary">Add Item(s) To Cart</button>
         
     </div>
 </section>
 <!-- buid your own pizza form ends -->
-
+<section class="cart" id="cartL">
+    <div class="products-container">
+        <div class="product-header">
+            <h1>CART</h1>
+        </div>
+        <div id="log"></div>
+        <button class="btn-outline-success" id="bt1">Checkout</button>
+        <button class="btn-outline-success" id="bt2">Delivery</button>
+    </div>
+    
+</section>
 </body>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/scripts.js"></script>
 </html>
