@@ -47,11 +47,12 @@ let products = [
 let carts = document.querySelectorAll(".cartRef")
 for(let i=0; i<carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        result=products[i].name, products[i].price;
+        result=products[i].name;
         result2=products[i].price;
         console.log(JSON.stringify(result))
         console.log(JSON.stringify(result2))
-        $("div#log").append("<li>" + JSON.stringify(result) +  "</li>")
+        $("div#log").append("<li> Custom " + result +" pizza @ $"+ result2 + "</li>")
+        
         
     })
 }
@@ -92,7 +93,7 @@ $("button#submit").click(function(event){
         } 
         if($('#GlutenFree').is(':checked')) {
             checkedBase="Gluten Free"
-            optionsPrice+=2
+            optionsPrice+=1
         } 
         if($('#OriginalPan').is(':checked')) {
             checkedBase="Original Pan"
@@ -232,7 +233,7 @@ $("button#submit").click(function(event){
         $("div#log").append("<li>" + 'Toppings: '+ totToppings +  "</li>")
         console.log(optionsPrice)
         console.log(JSON.stringify(optionsPrice))
-        $("div#log").append("<li>" + '<Strong>Total price from options:</Strong> ' + optionsPrice +  "</li>")
+        $("div#log").append("<li>" + '<Strong>Total price from options: $</Strong> ' + optionsPrice +  "</li>")
         (function (logger) {
             console.old = console.log;
             console.log = function () {
@@ -262,3 +263,31 @@ $("button#submit").click(function(event){
         
 });
 
+$("button#bt1").click(function(event){
+    event.preventDefault;
+    if(typeof optionsPrice === 'undefined'){
+        totalPrice= result2
+    }else if(typeof result2  === 'undefined'){
+        totalPrice=optionsPrice
+    }else{
+        totalPrice=optionsPrice + result2
+    }
+
+    alert(`Your order amounts to  ${totalPrice} dollars.`)
+})
+
+$("button#bt2").click(function(event){
+    event.preventDefault;
+    deliveryCharge=10;
+    if(typeof optionsPrice === 'undefined'){
+        totalPrice= result2 + deliveryCharge 
+    }else if(typeof result2  === 'undefined'){
+        totalPrice=optionsPrice +deliveryCharge
+    }else{
+        totalPrice=optionsPrice + result2 +deliveryCharge+result2
+    }
+    
+    var ans = prompt("Where do you want you order delivered?");
+    alert(`The delivery charge is ${deliveryCharge}. Your grand total is ${totalPrice} dollars. Thank you for shopping with us, your items will be delivered to ${ans}`)
+    
+})
