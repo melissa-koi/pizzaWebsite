@@ -22,6 +22,6 @@ You will need:
 * Stable internet connection
 * A github account
 * Repository used to host the website
-## [Link]() to live webpage
+## [Link]( https://melissa-koi.github.io/pizzaWebsite/) to live webpage
 
 ## [License](https://github.com/melissa-koi/pizzaWebsite/blob/main/LICENSE)
